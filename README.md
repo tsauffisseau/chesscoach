@@ -1,56 +1,119 @@
+# ChessCoach — PGN Analyzer (Stockfish + Streamlit)
 
-# ChessCoach — MVP v0.1
+Analyse tes parties d'échecs à partir de fichiers **PGN** avec **Stockfish** et une interface **Streamlit** simple.
+Le but : identifier les coups clés, les erreurs (blunders), et générer un tableau d’analyse lisible avec des graphes.
 
-Analyze a PGN with Stockfish (depth N), detect big evaluation swings, label moves (inaccuracy/mistake/blunder),
-and generate a one‑page report with a clickable evaluation curve and key positions.
+![Demo](docs/demo.gif) <!-- Remplace par ton GIF/capture -->
 
-## Quickstart
+## ✨ Fonctionnalités
+- Import d’un fichier **.pgn**
+- Analyse par **Stockfish** (profondeur configurable)
+- Scores et **meilleures lignes** suggérées
+- Détection d’erreurs (blunder, mistake, inaccuracy)
+- Export des résultats (CSV/Parquet)
+- UI Streamlit prête à l’emploi
 
+## 🚀 Démarrage rapide
+
+### 1) Cloner le repo
 ```bash
-# 1) Create & activate a virtual env
-python -m venv .venv && source .venv/bin/activate   # (Windows: .venv\Scripts\activate)
+git clone https://github.com/<ton-user>/<ton-repo>.git
+cd <ton-repo>
 
-# 2) Install deps
-pip install -r requirements.txt
 
-# 3) Install Stockfish (binary) and set the path
-#   - Linux:   sudo apt-get install stockfish
-#   - macOS:   brew install stockfish
-#   - Windows: Download from https://stockfishchess.org/download/
-# Then export env var (adapt the path):
-export STOCKFISH_EXECUTABLE="/usr/bin/stockfish"    # macOS/Linux example
-# setx STOCKFISH_EXECUTABLE "C:\path\to\stockfish.exe"   # Windows PowerShell
 
-# 4) Run the app
+# Option conda
+conda env create -f environment.yml
+conda activate chesscoach
+
+
+# Option pip
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+python -m pip install -r requirements.txt
+
+
+# Télécharger Stockfish
+
+Télécharge le binaire Stockfish pour ton OS (ou utilise celui déjà installé).
+Fournis le chemin via l’UI ou une variable d’environnement :
+
+# Exemple :
+export ENGINE_PATH="/chemin/vers/stockfish"
+# Windows (PowerShell) :
+# $env:ENGINE_PATH="C:\path\to\stockfish.exe"
+
+
+# Lancer l'app
+
 streamlit run ui/streamlit_app.py
-```
 
-## CLI (optional)
-```bash
-python -m chesscoach.analysis --pgn data_pgn/partie1.pgn --depth 12 --engine "$STOCKFISH_EXECUTABLE"
-```
 
-## Project layout
-```
-src/chesscoach/
-  __init__.py
-  config.py
-  parse_pgn.py
-  engine.py
-  analysis.py
-  eval_signals.py
-  stats.py
-  detectors.py
-  viz/
-    render.py
-ui/
-  streamlit_app.py
-data_pgn/
-  partie1.pgn
-```
 
-## Roadmap
-- v0.2: richer heuristics (tactics motifs), clickable eval timeline
-- v0.3: account‑level dashboard, openings/endgame repertoire
+# Architecture
+.
+├── src/chesscoach/
+│   ├── analysis.py        # analyse PGN + moteur
+│   ├── engine.py          # gestion Stockfish (open/close, depth, options)
+│   ├── parsing.py         # utilitaires PGN
+│   └── viz.py             # plots/figures
+├── ui/
+│   └── streamlit_app.py   # interface utilisateur
+├── tests/                 # tests unitaires (pytest)
+├── data/                  # (optionnel) échantillons .pgn
+├── docs/                  # captures, GIFs, schémas
+├── environment.yml
+├── requirements.txt
+└── README.md
 
-License: MIT
+
+
+
+
+# Configuration
+Paramètres importants (exemples) :
+
+ENGINE_PATH : chemin vers Stockfish
+
+ANALYSIS_DEPTH : profondeur d’analyse (par défaut 12–18)
+
+MULTIPV : nombre de meilleures lignes (1–3)
+
+Tu peux les passer via :
+
+Variables d’environnement
+
+Fichier .streamlit/secrets.toml (ne pas versionner)
+
+Widgets Streamlit (sidebar)
+
+
+
+# Tests
+
+pytest -q 
+
+
+
+# Road Map
+ Export PDF du rapport d’analyse
+
+ Détection automatique des moments critiques
+
+ Mode “coach” interactif coup-par-coup
+
+ Hébergement Streamlit Cloud
+
+
+#Contributions
+Les contributions sont bienvenues !
+Ouvre une issue / PR avec une description claire (repro steps, captures…).
+
+
+# Remerciements
+
+python-chess
+
+Stockfish
+
+Communauté open source ♟️
