@@ -1,0 +1,17 @@
+name: chesscoach
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - tqdm
+  - altair
+  - pip:
+      - pytest
+      - streamlit>=1.38
+      - python-chess>=1.999
