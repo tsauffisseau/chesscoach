@@ -43,7 +43,7 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 
 <p align="center">
   <img src="assets/interface.png" alt="Interface" 
-  width="800">
+  width="650">
 </p>
 
 
@@ -52,7 +52,7 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 
 <p align="center">
   <img src="assets/affichage.png" alt="Partie" 
-  width="800">
+  width="650">
 </p>
 
 
@@ -60,7 +60,7 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 
 <p align="center">
   <img src="assets/evolution.png" alt="Evolution du score au cours de la partie" 
-  width="800">
+  width="650">
 </p>
 
 
@@ -68,7 +68,7 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 ### Plus grosse erreur de la partie
 
 <p align="center">
-  <img src="assets/erreur.png" alt="Plus grosse erreur de la partie" width="650">
+  <img src="assets/erreur.png" alt="Plus grosse erreur de la partie">
 </p>
 
 
@@ -174,7 +174,7 @@ chesscoach/
 
 - [x] Analyse PGN via Stockfish  
 - [x] Interface Streamlit fonctionnelle  
-- [-] Export PDF du rapport d’analyse de la partie : En cours
+- Export PDF du rapport d’analyse de la partie : En cours
 - [ ] Statistiques multi-parties pour un compte 
 - [ ] Mode “coach interactif” et exercices
 - [ ] Hébergement Streamlit Cloud  
@@ -202,7 +202,7 @@ Les contributions sont bienvenues !
 
 ---
 
-## 📄 Licence
+## Licence
 
 Ce projet est sous licence [MIT](LICENSE).
 
@@ -223,5 +223,6 @@ Tu peux librement **utiliser, modifier et redistribuer** ce projet à condition 
 
 ---
 
-> Projet développé par tsauffisseau - Théophile Sauffisseau
+> Projet développé par tsauffisseau - Théophile Sauffisseau<br>
+
 > *(Machine Learning Engineer Student, 2025)*
