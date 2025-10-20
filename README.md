@@ -39,18 +39,37 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 ## Exemples 
 
 
-- **Interface**
-![Interface ](assets/interface.jpg)
+### Interface
 
-- **Stats de la partie**
+<p align="center">
+  <img src="assets/interface.png" alt="Interface" 
+  width="800">
+</p>
 
-![Partie ](assets/affichage.jpg)
 
-- **Evolution du score au cours de la partie**
-![Evolution du score au cours de la partie](assets/evolution.png)
 
-- **Plus grosse erreur de la partie**
-![Plus grosse erreur de la partie : ](assets/erreur.png)
+### Stats de la partie
+
+<p align="center">
+  <img src="assets/affichage.png" alt="Partie" 
+  width="800">
+</p>
+
+
+### Evolution du score au cours de la partie
+
+<p align="center">
+  <img src="assets/evolution.png" alt="Evolution du score au cours de la partie" 
+  width="800">
+</p>
+
+
+
+### Plus grosse erreur de la partie
+
+<p align="center">
+  <img src="assets/erreur.png" alt="Plus grosse erreur de la partie" width="650">
+</p>
 
 
 
@@ -155,7 +174,7 @@ chesscoach/
 
 - [x] Analyse PGN via Stockfish  
 - [x] Interface Streamlit fonctionnelle  
-- [ ] Export PDF du rapport d’analyse de la partie : en cours
+- [-] Export PDF du rapport d’analyse de la partie : En cours
 - [ ] Statistiques multi-parties pour un compte 
 - [ ] Mode “coach interactif” et exercices
 - [ ] Hébergement Streamlit Cloud  
@@ -188,7 +207,7 @@ Les contributions sont bienvenues !
 Ce projet est sous licence [MIT](LICENSE).
 
 ```
-MIT License © 2025 Théophile Sauffisseau
+MIT License © tsauffisseau - Théophile Sauffisseau - 2025
 ```
 
 Tu peux librement **utiliser, modifier et redistribuer** ce projet à condition de mentionner l’auteur original.
@@ -200,9 +219,9 @@ Tu peux librement **utiliser, modifier et redistribuer** ce projet à condition 
 - [python-chess](https://python-chess.readthedocs.io/)
 - [Stockfish](https://stockfishchess.org/)
 - [Streamlit](https://streamlit.io/)
-- Communauté open source ♟️
+- Communauté open source
 
 ---
 
-> Projet développé par ** tsauffisseau - Théophile Sauffisseau**  
+> Projet développé par tsauffisseau - Théophile Sauffisseau
 > *(Machine Learning Engineer Student, 2025)*
