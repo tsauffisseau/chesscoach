@@ -1,14 +1,40 @@
-
-# Python
+# === Python ===
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.egg-info/
-.venv/
-.env
+dist/
+build/
+.eggs/
 .ipynb_checkpoints/
-*.log
+ENV/
+env/
+venv/
+.venv/
 
-# Streamlit
-.streamlit/
+# === Conda / Pip ===
+*.lock
+pip-wheel-metadata/
+
+# === Streamlit ===
+.streamlit/secrets.toml
+.streamlit/*.json
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === VSCode ===
+.vscode/
+
+# === Logs & temp ===
+*.log
+logs/
+tmp/
+.cache/
+
+# === Data samples (optionnel) ===
+data/raw/
+data/interim/
+data/processed/

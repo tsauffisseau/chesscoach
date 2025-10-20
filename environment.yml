@@ -4,14 +4,14 @@ channels:
   - defaults
 dependencies:
   - python=3.10
+  - numpy=1.26
+  - pandas=2.2
+  - scipy=1.11
+  - matplotlib=3.8
+  - altair=5.3
+  - tqdm=4.66
   - pip
-  - numpy
-  - pandas
-  - matplotlib
-  - scipy
-  - tqdm
-  - altair
   - pip:
-      - pytest
-      - streamlit>=1.38
-      - python-chess>=1.999
+      - streamlit=1.49
+      - python-chess=1.999
+      - pytest=8.4

@@ -1,3 +1,4 @@
 @echo off
-set PYTHONPATH=%cd%\src
-streamlit run ui\streamlit_app.py --server.fileWatcherType none
+set ENGINE_PATH=%~dp0bin\stockfish\stockfish.exe
+call .venv\Scripts\activate
+streamlit run ui\streamlit_app.py

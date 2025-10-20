@@ -66,7 +66,7 @@ conda activate chesscoach
 ou avec pip :
 ```bash
 python -m venv .venv
-.venv\Scripts\activate      # sous Windows
+.venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
