@@ -11,17 +11,18 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 ---
 
 ## Table des matières
-1. [Aperçu](#-aperçu)
-2. [Fonctionnalités](#-fonctionnalités)
-3. [Installation](#-installation)
-4. [Configuration de Stockfish](#️-configuration-de-stockfish)
-5. [Lancer l’application](#-lancer-lapplication)
-6. [Structure du projet](#-structure-du-projet)
-7. [Exemples et Captures](#-exemples-et-captures)
-8. [Roadmap](#-roadmap)
-9. [Contribuer](#-contribuer)
-10. [Licence](#-licence)
-11. [Remerciements](#-remerciements)
+1. [Aperçu](#aperçu)
+2. [Exemples](#exemples)
+
+3. [Fonctionnalités](#fonctionnalités)
+4. [Installation](#installation)
+5. [Configuration de Stockfish](#️configuration-de-stockfish)
+6. [Lancer l’application](#lancer-lapplication)
+7. [Structure du projet](#structure-du-projet)
+8. [Où j'en suis - Roadmap](#où-j'en-suis-Roadmap)
+9. [Contribuer](#contribuer)
+10. [Licence](#licence)
+11. [Remerciements](#remerciements)
 
 ---
 
@@ -42,7 +43,7 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 ### Interface
 
 <p align="center">
-  <img src="assets/interface.png" alt="Interface" 
+  <img src="assets/interface.jpg" alt="Interface" 
   width="650">
 </p>
 
@@ -51,7 +52,7 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 ### Stats de la partie
 
 <p align="center">
-  <img src="assets/affichage.png" alt="Partie" 
+  <img src="assets/affichage.jpg" alt="Partie" 
   width="650">
 </p>
 
@@ -220,6 +221,7 @@ Tu peux librement **utiliser, modifier et redistribuer** ce projet à condition 
 - [Stockfish](https://stockfishchess.org/)
 - [Streamlit](https://streamlit.io/)
 - Communauté open source
+- Mon petit frère pour l'idée
 
 ---
 
