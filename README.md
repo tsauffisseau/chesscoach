@@ -111,7 +111,7 @@ pip install -r requirements.txt
 
 ---
 
-## Configuration de Stockfish
+##  Configuration de Stockfish
 
 Télécharge le moteur Stockfish depuis :  
  https://stockfishchess.org/download/
@@ -170,7 +170,7 @@ chesscoach/
 
 ---
 
-## Où j'en suis - Roadmap
+##  Roadmap
 
 - [x] Analyse PGN via Stockfish  
 - [x] Interface Streamlit fonctionnelle  
