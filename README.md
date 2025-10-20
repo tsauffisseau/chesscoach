@@ -35,6 +35,20 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 
 > 💡 Idéal pour comprendre ses erreurs sans dépendre de Chess.com ou Lichess.
 
+
+![Interface ](assets/interface.jpg)
+
+![Partie ](assets/affichage.jpg)
+
+
+
+![Evolution du score au cours de la partie](assets/evolution.png)
+
+![Plus grosse erreur de la partie : ](assets/erreur.png)
+
+
+
+
 ---
 
 ## ✨ Fonctionnalités
@@ -91,10 +105,11 @@ Tu peux aussi définir ce chemin directement dans la barre latérale Streamlit d
 
 À la racine du projet :
 ```bash
+pip install -e .
 streamlit run ui/streamlit_app.py
 ```
 
-Puis ouvre le lien local (souvent `http://localhost:8501`) dans ton navigateur.
+Puis le lien local (`http://localhost:8501`) s'ouvre dans ton navigateur.
 
 ---
 
