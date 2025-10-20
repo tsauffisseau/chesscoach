@@ -15,10 +15,10 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 2. [Exemples](#exemples)
 3. [Fonctionnalités](#fonctionnalités)
 4. [Installation](#installation)
-5. [Configuration de Stockfish](#️configuration-de-Stockfish)
-6. [Lancer l’application](#lancer-l'application)
+5. [Configuration de Stockfish](#️configuration-de-stockfish)
+6. [Lancer l’application](#lancer-lapplication)
 7. [Structure du projet](#structure-du-projet)
-8. [Où j'en suis - Roadmap](#où-j'en-suis---Roadmap)
+8. [Roadmap](#roadmap)
 9. [Contribuer](#contribuer)
 10. [Licence](#licence)
 11. [Remerciements](#remerciements)
@@ -126,7 +126,7 @@ Tu peux aussi définir ce chemin directement dans la barre latérale Streamlit d
 
 ---
 
-## Run - Lancer l’application
+##  Lancer l’application
 
 À la racine du projet :
 ```bash
