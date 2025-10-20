@@ -15,7 +15,7 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 2. [Exemples](#exemples)
 3. [Fonctionnalités](#fonctionnalités)
 4. [Installation](#installation)
-5. [Configuration de Stockfish](#️configuration-de-stockfish)
+5. [Configuration de Stockfish](#configuration-de-stockfish)
 6. [Lancer l’application](#lancer-lapplication)
 7. [Structure du projet](#structure-du-projet)
 8. [Roadmap](#roadmap)
@@ -111,7 +111,7 @@ pip install -r requirements.txt
 
 ---
 
-##  Configuration de Stockfish
+## Configuration de Stockfish
 
 Télécharge le moteur Stockfish depuis :  
  https://stockfishchess.org/download/
