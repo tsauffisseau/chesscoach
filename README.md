@@ -10,7 +10,7 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 
 ---
 
-## 📋 Table des matières
+## Table des matières
 1. [Aperçu](#-aperçu)
 2. [Fonctionnalités](#-fonctionnalités)
 3. [Installation](#-installation)
@@ -25,7 +25,7 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 
 ---
 
-## 🎯 Aperçu
+## Aperçu
 
 **ChessCoach** te permet de :
 - Charger un ou plusieurs fichiers **.pgn** de parties d’échecs.
@@ -36,14 +36,20 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 > 💡 Idéal pour comprendre ses erreurs sans dépendre de Chess.com ou Lichess.
 
 
+## Exemples 
+
+
+- **Interface**
 ![Interface ](assets/interface.jpg)
+
+- **Stats de la partie**
 
 ![Partie ](assets/affichage.jpg)
 
-
-
+- **Evolution du score au cours de la partie**
 ![Evolution du score au cours de la partie](assets/evolution.png)
 
+- **Plus grosse erreur de la partie**
 ![Plus grosse erreur de la partie : ](assets/erreur.png)
 
 
@@ -51,27 +57,27 @@ L’objectif : **identifier les erreurs, les coups clés et visualiser les perfo
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
-- 📥 **Import de fichiers PGN**
-- 🤖 **Analyse automatisée par Stockfish** (profondeur ajustable)
-- ⚡ **Scores d’évaluation** et suggestions de meilleurs coups
-- 📊 **Visualisations dynamiques** (score, erreurs, etc.)
-- 🧾 **Export CSV / Parquet**
-- 🧠 **Détection automatique** des blunders, mistakes, inaccuracies
-- 💻 Interface **Streamlit** claire et fluide
+-  **Import de fichiers PGN**
+-  **Analyse automatisée par Stockfish** (profondeur ajustable)
+-  **Scores d’évaluation** et suggestions de meilleurs coups
+-  **Visualisations dynamiques** (score, erreurs, etc.)
+-  **Export CSV / Parquet**
+-  **Détection automatique** des blunders, mistakes, inaccuracies
+-  Interface **Streamlit** claire et fluide
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-### 1️⃣ Cloner le dépôt
+### 1️ Cloner le dépôt
 ```bash
 git clone https://github.com/tsauffisseau/chesscoach.git
 cd chesscoach
 ```
 
-### 2️⃣ Créer l’environnement Conda
+### 2️ Créer l’environnement Conda
 ```bash
 conda env create -f environment.yml
 conda activate chesscoach
@@ -86,22 +92,22 @@ pip install -r requirements.txt
 
 ---
 
-## 🧩 Configuration de Stockfish
+## Configuration de Stockfish
 
 Télécharge le moteur Stockfish depuis :  
-👉 https://stockfishchess.org/download/
+ https://stockfishchess.org/download/
 
 Puis indique son chemin dans ton environnement :
 ```bash
 # Exemple sous PowerShell :
-$env:ENGINE_PATH="C:\Users\thsau\Downloads\stockfish\stockfish.exe"
+$env:ENGINE_PATH="C:\Users\thsau\dossier\stockfish\stockfish.exe"
 ```
 
 Tu peux aussi définir ce chemin directement dans la barre latérale Streamlit de l’app.
 
 ---
 
-## 🚀 Lancer l’application
+## Run - Lancer l’application
 
 À la racine du projet :
 ```bash
@@ -109,11 +115,16 @@ pip install -e .
 streamlit run ui/streamlit_app.py
 ```
 
+Pour les utilisateurs sur Windows, le fichier run.bat peut etre un raccourci
 Puis le lien local (`http://localhost:8501`) s'ouvre dans ton navigateur.
+
+
+[ Télécharger l'exemple PGN](data_pgn/partie1.pgn)
+
 
 ---
 
-## 🧱 Structure du projet
+##  Structure du projet
 
 ```
 chesscoach/
@@ -140,29 +151,18 @@ chesscoach/
 
 ---
 
-## 🖼️ Exemples et Captures
-
-*(Ajoute plus tard tes images dans un dossier `docs/`)*
-
-```markdown
-![Interface principale](docs/screenshot_ui.png)
-![Analyse d'une partie](docs/screenshot_analysis.png)
-```
-
----
-
-## 🗺️ Roadmap
+## Où j'en suis - Roadmap
 
 - [x] Analyse PGN via Stockfish  
 - [x] Interface Streamlit fonctionnelle  
-- [ ] Export PDF du rapport d’analyse  
-- [ ] Mode “coach interactif”  
-- [ ] Statistiques multi-parties  
+- [ ] Export PDF du rapport d’analyse de la partie : en cours
+- [ ] Statistiques multi-parties pour un compte 
+- [ ] Mode “coach interactif” et exercices
 - [ ] Hébergement Streamlit Cloud  
 
 ---
 
-## 🤝 Contribuer
+## Contribuer
 
 Les contributions sont bienvenues !  
 
@@ -195,7 +195,7 @@ Tu peux librement **utiliser, modifier et redistribuer** ce projet à condition 
 
 ---
 
-## 🙌 Remerciements
+## Remerciements
 
 - [python-chess](https://python-chess.readthedocs.io/)
 - [Stockfish](https://stockfishchess.org/)
@@ -204,5 +204,5 @@ Tu peux librement **utiliser, modifier et redistribuer** ce projet à condition 
 
 ---
 
-> Projet développé par **Théophile Sauffisseau**  
-> *(Télécom SudParis – École Polytechnique, 2025)*
+> Projet développé par ** tsauffisseau - Théophile Sauffisseau**  
+> *(Machine Learning Engineer Student, 2025)*
