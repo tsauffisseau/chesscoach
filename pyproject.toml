@@ -8,26 +8,26 @@ version = "0.1.0"
 requires-python = ">=3.10"
 description = "Analyze chess PGN files with Stockfish via a Streamlit UI."
 readme = "README.md"
-authors = [{name = "Théophile Sauffisseau"}]
+authors = [{name = " tsauffisseau - Théophile Sauffisseau"}]
 license = {text = "MIT"}
 
 # Runtime dependencies (align with environment.yml and requirements.txt)
 dependencies = [
-    "numpy~=1.26",
-    "pandas~=2.2",
-    "scipy~=1.11",
-    "matplotlib~=3.8",
-    "altair~=5.3",
-    "tqdm~=4.66",
-    "streamlit~=1.49",
-    "python-chess~=1.999"
+    "numpy=1.26",
+    "pandas=2.2",
+    "scipy=1.11",
+    "matplotlib=3.8",
+    "altair=5.5",
+    "tqdm=4.67",
+    "streamlit=1.49",
+    "python-chess=1.999"
 ]
 
 [project.optional-dependencies]
 dev = [
-    "pytest~=8.4",
-    "black~=24.10",
-    "isort~=5.13"
+    "pytest=8.4",
+    "black=24.10",
+    "isort=5.13"
 ]
 
 [tool.setuptools]
